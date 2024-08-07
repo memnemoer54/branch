@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+.dropdown-content, .dropdown-content-submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content li, .dropdown-content-submenu li {
+    float: none;
+}
+
+.dropdown:hover .dropdown-content, .dropdown-submenu:hover .dropdown-content-submenu {
+    display: block;
+}
+
+.dropdown-content-submenu {
+    left: 100%;
+    top: 0;
+}
+
+.dropdown-content li a:hover, .dropdown-content-submenu li a:hover {
+    background-color: #575757;
+}
